@@ -1,0 +1,9 @@
+Program 0x12
+Party DEFAULT
+AreaSettings 9 -1
+	SetProgressFlag 0x107B
+	SetJump Type 1 World HB Area 6 Entrance 53 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+Spawn "k50e"
+

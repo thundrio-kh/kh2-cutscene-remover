@@ -1,0 +1,7 @@
+Program 0x56
+Bgm 111 111
+AreaSettings 0 -1
+	SetJump Type 1 World CA Area 11 Entrance 0 LocalSet 0 FadeType 1
+	SetPartyMenu 0
+
+

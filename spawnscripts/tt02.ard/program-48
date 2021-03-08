@@ -1,0 +1,8 @@
+Program 0x48
+Party DEFAULT
+AreaSettings 0 -1
+	SetProgressFlag 0x8B7
+	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 116 FadeType 1
+	SetPartyMenu 0
+
+

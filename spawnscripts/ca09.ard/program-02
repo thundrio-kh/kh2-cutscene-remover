@@ -1,0 +1,8 @@
+Program 0x02
+Party DEFAULT
+AreaSettings 1 69
+	SetProgressFlag 0x4012
+	SetJump Type 2 World CA Area 0 Entrance 0 LocalSet 59 FadeType 1
+	SetPartyMenu 0
+
+

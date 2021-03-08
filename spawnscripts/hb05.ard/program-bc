@@ -1,0 +1,6 @@
+Program 0xBC
+AreaSettings 0 -1
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 189 FadeType 1
+	SetPartyMenu 0
+
+

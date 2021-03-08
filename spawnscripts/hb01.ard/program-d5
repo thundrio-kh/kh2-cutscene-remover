@@ -1,0 +1,7 @@
+Program 0xD5
+Bgm 111 111
+AreaSettings 0 -1
+	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 214 FadeType 1
+	SetPartyMenu 0
+
+

@@ -1,0 +1,9 @@
+Program 0x36
+Party DEFAULT
+AreaSettings 0 -1
+	SetProgressFlag 0x3000
+	SetUnk05 0x2
+	SetJump Type 4 World DC Area 0 Entrance 0 LocalSet 0 FadeType -1
+	SetPartyMenu 0
+
+

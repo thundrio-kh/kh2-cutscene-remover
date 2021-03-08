@@ -1,0 +1,9 @@
+Program 0x0D
+Party W_FRIEND
+Bgm 115 115
+AreaSettings 0 -1
+	SetProgressFlag 0x204A
+	SetJump Type 2 World MU Area 0 Entrance 0 LocalSet 79 FadeType 1
+	SetPartyMenu 0
+
+

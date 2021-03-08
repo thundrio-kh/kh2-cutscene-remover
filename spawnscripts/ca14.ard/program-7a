@@ -1,0 +1,6 @@
+Program 0x7A
+AreaSettings 0 -1
+	SetJump Type 2 World CA Area 0 Entrance 0 LocalSet 123 FadeType 1
+	SetPartyMenu 0
+
+

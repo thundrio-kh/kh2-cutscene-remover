@@ -1,0 +1,9 @@
+Program 0x3D
+Party DEFAULT
+Bgm 85 85
+AreaSettings 7 -1
+	SetProgressFlag 0x442B
+	SetJump Type 2 World TR Area 0 Entrance 0 LocalSet 62 FadeType 1
+	SetPartyMenu 0
+
+
