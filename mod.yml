@@ -2462,7 +2462,6 @@ assets:
     - name: spawnscripts/tt04.ard/program-15f
     - name: spawnscripts/tt04.ard/program-160
     - name: spawnscripts/tt04.ard/program-177
-    - name: spawnscripts/tt04.ard/program-4c
     - name: spawnscripts/tt04.ard/program-4d
     - name: spawnscripts/tt04.ard/program-4e
     - name: spawnscripts/tt04.ard/program-4f
@@ -2850,7 +2849,6 @@ assets:
   - method: areadatascript
     name: evt
     source:
-    - name: spawnscripts/tt32.ard/program-01
     - name: spawnscripts/tt32.ard/program-109
     - name: spawnscripts/tt32.ard/program-10a
     - name: spawnscripts/tt32.ard/program-9a
@@ -3012,5 +3010,8 @@ assets:
     - name: spawnscripts/wi08.ard/program-4f
     - name: spawnscripts/wi08.ard/program-53
     type: AreaDataScript
+description: Removes as many cutscenes as possible. Should be compatible with GOA
+  Randomizer. In beta, let me know of any issues.
 logo: logo.png
+originalAuthor: Thundrio
 title: KH2 Cutscene Remover V0.1
