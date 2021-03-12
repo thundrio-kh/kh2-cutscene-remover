@@ -4,7 +4,7 @@ lib = kh2lib()
 
 EXTRACT_ARDS=False
 
-only_build = []
+only_build = ["tt27.ard"]
 
 arddir = os.path.join(os.getcwd(), "extracted_ards")
 
@@ -19,7 +19,7 @@ for ard in os.listdir(arddir_src):
 
     out_pth = os.path.join(arddir, ard)
 
-    evtname = None
+    evtname = "evt.script"#None
     for f in [i for i in os.listdir(out_pth) if not i.endswith(".txt") and not i.endswith(".new")]:
         if f.startswith("evt."):
             evtname = f
@@ -29,6 +29,7 @@ for ard in os.listdir(arddir_src):
     else:
         evt_pth = os.path.join(out_pth, evtname)
 
-        # print("compiling script {} - {}".format(evt_pth+".txt", evt_pth))
+        print("compiling script {} - {}".format(evt_pth+".txt", evt_pth))
+
         lib.editengine.spawnscript_compile(evt_pth+".txt.new", evt_pth)
         lib.editengine.bar_build(os.path.join(out_pth, ard+".json"), fn)

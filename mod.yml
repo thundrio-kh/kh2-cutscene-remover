@@ -2814,7 +2814,6 @@ assets:
     name: evt
     source:
     - name: spawnscripts/tt27.ard/program-01
-    - name: spawnscripts/tt27.ard/program-02
     - name: spawnscripts/tt27.ard/program-04
     - name: spawnscripts/tt27.ard/program-156
     - name: spawnscripts/tt27.ard/program-157

@@ -22,8 +22,12 @@ os.mkdir(spawndir)
 
 ardinfo = {}
 ignore_programs = {
+    # Choosing your weapon struggle
     "tt04.ard": ["0x4C"],
-    "tt32.ard": ["0x01"]
+    # Choosing your SOA weapon
+    "tt32.ard": ["0x01"],
+    # Talking to yen sid
+    "tt27.ard": ["0x02"]
 }
 
 SKIPLINE = "	SetProgressFlag 0xFFF\n"
@@ -31,7 +35,7 @@ SKIPLINE = "	SetProgressFlag 0xFFF\n"
 def shouldIgnore(ard, program):
     if ard in ignore_programs:
         if program.strip() in ignore_programs[ard]:
-            print("huh")
+            print("ignoring {}, {}".format(ard, program.strip()))
             return True
     return False
 

@@ -1,0 +1,60 @@
+Taking a closer look at the weapon choosing EVTs there are 4 setevents, maybe just null the first 3 not the 4th to skip the cutscene. Also makes you wondeer if the type (1 or whatever) is how you get stuff?
+EVENTS THAT DONT START
+baily scene didn't start (and leaving hb to come back made portal be data portal)
+
+CUTSCENES THAT PLAY
+cutscene after first candy cane lane fight played
+cutscene after prison keeper played
+cutscene entering first oc tunnel plays
+cutscene after first tt tower fight
+cutscene after heading out from town in port royal
+cutscene after boarding port royal first time
+cutscene first time heading to isla de murt
+cutsce after first interceptor fight
+cutscene after killing twilight thorn
+cutscene aafter beating haynor
+after struggle fights
+before getting to computer as roxas
+after killing cerbrerus
+after killing hydra
+after firefighting fight wi
+after treasure room fight
+entering twtnw bridge room
+afterr hyenas
+after xemnas i
+after ballroom nobodies
+entering ht 2
+after killing experiment
+after agrabah fight on top of tower
+after first gambler in ca 2
+before final xemnas
+after bailey fight
+after sp xp fight
+after beating mcp (wonder if related to getting an item)
+after ancers fight in hb 2
+cutscene before getting fenrir
+
+PLACES WHERE MIGHT NEED TO ADJUST THE JUMP BECAUSE MULTI CUTSCENES PLAY
+after killing thorn  twili
+in between each day stt
+after finishing wi
+after chasm of challenges
+
+WEIRD
+scene after minute fight lod doeesnt end right, still works
+part where you go to sp normally softlocks with rando
+after fighting riku fight ends instahntly but next cutscene plays
+after first mminigame day 2 skips a few cutscenes but not all
+2nd SP jump goes to larxene
+going to hakuna atada is lk 2 crashes
+marluxias portal doesn't show up
+completing wi marked pirates purple and completing pirates marked twtnw purple
+atlantica is softlocked
+cntinuing sp2 first fored fight returns you to the fight
+	demyx too? Is this just a bug?
+can't get terra to show up?
+
+Do you get items after tt1 nobody fight?
+
+You should make your icon.png as small as 128x128. And I recommend for your preview.png to have a maximum height of 288 and a maximum width of 512. I need to publish those specifications  . It will be important to have the correct size once I am going to implement the Mods Manager Feed.
+About your mod, congratulations  it is the very first full mod with the new Mods Manager and, on the way it's structured, it will most likely be compatible with all the future mods too! This is a nice step forward.
