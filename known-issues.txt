@@ -4,39 +4,6 @@ Taking a closer look at the weapon choosing EVTs there are 4 setevents, maybe ju
 EVENTS THAT DONT START
 baily scene didn't start (and leaving hb to come back made portal be data portal)
 
-somethings up because when I build the nm06 ard myself, the cutscene is properly skipped. maybe it has to do with the number of programs in there? or maybe I'm splitting the programs wrong
-CUTSCENES THAT PLAY
-cutscene after first candy cane lane fight played
-cutscene after prison keeper played
-cutscene entering first oc tunnel plays
-cutscene after first tt tower fight
-cutscene after heading out from town in port royal
-cutscene after boarding port royal first time
-cutscene first time heading to isla de murt
-cutsce after first interceptor fight
-cutscene after killing twilight thorn
-cutscene aafter beating haynor
-after struggle fights
-before getting to computer as roxas
-after killing cerbrerus
-after killing hydra
-after firefighting fight wi
-after treasure room fight
-entering twtnw bridge room
-afterr hyenas
-after xemnas i
-after ballroom nobodies
-entering ht 2
-after killing experiment
-after agrabah fight on top of tower
-after first gambler in ca 2
-before final xemnas
-after bailey fight
-after sp xp fight
-after beating mcp (wonder if related to getting an item)
-after ancers fight in hb 2
-cutscene before getting fenrir
-
 PLACES WHERE MIGHT NEED TO ADJUST THE JUMP BECAUSE MULTI CUTSCENES PLAY
 after killing thorn  twili
 in between each day stt
