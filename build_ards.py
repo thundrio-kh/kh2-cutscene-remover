@@ -4,7 +4,7 @@ lib = kh2lib()
 
 EXTRACT_ARDS=False
 
-only_build = ["tt27.ard"]
+only_build = ["nm06.ard"]
 
 arddir = os.path.join(os.getcwd(), "extracted_ards")
 

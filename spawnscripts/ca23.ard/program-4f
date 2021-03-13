@@ -1,0 +1,7 @@
+Program 0x4F
+Party W_FRIEND
+Bgm Default Default
+AreaSettings 0 -1
+	SetProgressFlag 0x400B
+	SetJump Type 1 World CA Area 3 Entrance 51 LocalSet 0 FadeType 1
+	SetPartyMenu 0

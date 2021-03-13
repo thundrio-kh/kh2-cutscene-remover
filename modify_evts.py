@@ -90,4 +90,12 @@ for ard in os.listdir(arddir_src):
                 else:
                     lines_program.append(line)
                     lines_new.append(line)
+        # Changes made here need to happen up above too
+        if changesMade:
+            spawnscriptsdir = os.path.join(spawndir, ard)
+            if not os.path.exists(spawnscriptsdir):
+                os.mkdir(spawnscriptsdir)
+            programfn = os.path.join(spawnscriptsdir, "program-"+currentProgram.lower().replace(" ", "")[2:].strip())
+            with open(programfn, "w") as f:
+                f.write(''.join(lines_program))
         open(evt_pth+".txt.new","w").write("".join(lines_new))

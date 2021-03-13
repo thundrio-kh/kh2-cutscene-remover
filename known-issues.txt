@@ -1,7 +1,10 @@
+After switching outfits with fairies, can't leave tower
+
 Taking a closer look at the weapon choosing EVTs there are 4 setevents, maybe just null the first 3 not the 4th to skip the cutscene. Also makes you wondeer if the type (1 or whatever) is how you get stuff?
 EVENTS THAT DONT START
 baily scene didn't start (and leaving hb to come back made portal be data portal)
 
+somethings up because when I build the nm06 ard myself, the cutscene is properly skipped. maybe it has to do with the number of programs in there? or maybe I'm splitting the programs wrong
 CUTSCENES THAT PLAY
 cutscene after first candy cane lane fight played
 cutscene after prison keeper played
