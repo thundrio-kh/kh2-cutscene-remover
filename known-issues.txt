@@ -1,30 +1,20 @@
-After switching outfits with fairies, can't leave tower
+softlocks after 1K
 
-Taking a closer look at the weapon choosing EVTs there are 4 setevents, maybe just null the first 3 not the 4th to skip the cutscene. Also makes you wondeer if the type (1 or whatever) is how you get stuff?
-EVENTS THAT DONT START
-baily scene didn't start (and leaving hb to come back made portal be data portal)
+marluxias portal doesn't show up
+completing wi marked pirates purple and completing pirates marked twtnw purple
+terra doesn't show up?
 
-PLACES WHERE MIGHT NEED TO ADJUST THE JUMP BECAUSE MULTI CUTSCENES PLAY
+WEIRD
+scene after minute fight lod doeesnt end right, still works
+
+PLACES WHERE multiple cutscenes play so you can condense the programs to speed things up
 after killing thorn  twili
 in between each day stt
 after finishing wi
 after chasm of challenges
 
-WEIRD
-scene after minute fight lod doeesnt end right, still works
-part where you go to sp normally softlocks with rando
-after fighting riku fight ends instahntly but next cutscene plays
-after first mminigame day 2 skips a few cutscenes but not all
-2nd SP jump goes to larxene
-going to hakuna atada is lk 2 crashes
-marluxias portal doesn't show up
-completing wi marked pirates purple and completing pirates marked twtnw purple
-atlantica is softlocked
-cntinuing sp2 first fored fight returns you to the fight
-	demyx too? Is this just a bug?
-can't get terra to show up?
 
-Do you get items after tt1 nobody fight?
+
 
 You should make your icon.png as small as 128x128. And I recommend for your preview.png to have a maximum height of 288 and a maximum width of 512. I need to publish those specifications  . It will be important to have the correct size once I am going to implement the Mods Manager Feed.
 About your mod, congratulations  it is the very first full mod with the new Mods Manager and, on the way it's structured, it will most likely be compatible with all the future mods too! This is a nice step forward.

@@ -19,28 +19,46 @@ if os.path.exists(spawndir):
     shutil.rmtree(spawndir)
 os.mkdir(spawndir)
 
-
 ardinfo = {}
+ignore_worlds = [
+    "lm" # little mermaid is all cutscenes lol so it softlocks
+]
+ignore_ards = [
+    "lk08.ard", # Entering jungle for second visit story crashes pcsx2
+    "wi03.ard"
+]
+# These issues might all be related to GOA mod
+# Check if the continue issue is due to GOA mod
+# I need to know if there are any areas in the game where a mission starts without a cutscene beforehand
 ignore_programs = {
-    # Choosing your weapon struggle
-    "tt04.ard": ["0x4C"],
-    # Choosing your SOA weapon
-    "tt32.ard": ["0x01"],
-    # Talking to yen sid
-    "tt27.ard": ["0x02"]
+    "tt27.ard": ["0x02"], # Talking to yen sid
+    "tt28.ard": ["0x02"], # changing to kh2 sora
+    "tr01.ard": ["0x33"], # causes entering SP the second time to go to data larxene
+    "hb09.ard": ["0x33"], # causes first cutscene in merlin to not fire
+    "hb05.ard": ["0x01"], # Causes you to be sent to SP instead of skipped, and makes demyx portal
 }
 
 SKIPLINE = "	SetProgressFlag 0xFFF\n"
 
-def shouldIgnore(ard, program):
+def shouldIgnore(ard, program, eventtype):
+    ignore = False
+    if ard[:2] in ignore_worlds:
+        ignore = True
+    if ard in ignore_ards:
+        ignore = True
+    # NEEDED To make choosing weapons work
+    if int(eventtype) >= 128:
+        ignore = True
     if ard in ignore_programs:
         if program.strip() in ignore_programs[ard]:
-            print("ignoring {}, {}".format(ard, program.strip()))
-            return True
-    return False
+            ignore = True
+    if ignore:
+        print("ignoring {}, {}".format(ard, program.strip()))
+    return ignore
 
 arddir_src = os.path.join(os.environ["USE_KH2_GITPATH"], "KH2", "ard")
 
+eventtypes = []
 for ard in os.listdir(arddir_src):
     fn = os.path.join(arddir_src, ard)
 
@@ -83,8 +101,11 @@ for ard in os.listdir(arddir_src):
                     changesMade = False
                 currentProgram = line.split(" ")[1]
             if len(currentProgram) > 0:
-                if "SetEvent" in line and not shouldIgnore(ard, currentProgram):
-                    changesMade = True
+                if "SetEvent" in line:
+                    eventtype = line.strip().split(" ")[3]
+                    eventtypes.append("{} - {}".format(eventtype.zfill(3), ard))
+                if "SetEvent" in line and not shouldIgnore(ard, currentProgram, eventtype):
+                        changesMade = True
                     #lines_program.append(SKIPLINE)
                     #lines_new.append(SKIPLINE)
                 else:

@@ -901,7 +901,6 @@ assets:
     source:
     - name: spawnscripts/eh20.ard/program-102
     - name: spawnscripts/eh20.ard/program-103
-    - name: spawnscripts/eh20.ard/program-4a
     - name: spawnscripts/eh20.ard/program-55
     - name: spawnscripts/eh20.ard/program-69
     - name: spawnscripts/eh20.ard/program-6a
@@ -972,11 +971,7 @@ assets:
   - method: areadatascript
     name: evt
     source:
-    - name: spawnscripts/es00.ard/program-33
     - name: spawnscripts/es00.ard/program-39
-    - name: spawnscripts/es00.ard/program-3a
-    - name: spawnscripts/es00.ard/program-3c
-    - name: spawnscripts/es00.ard/program-3d
     - name: spawnscripts/es00.ard/program-3e
     - name: spawnscripts/es00.ard/program-41
     - name: spawnscripts/es00.ard/program-42
@@ -1073,7 +1068,6 @@ assets:
   - method: areadatascript
     name: evt
     source:
-    - name: spawnscripts/hb05.ard/program-01
     - name: spawnscripts/hb05.ard/program-02
     - name: spawnscripts/hb05.ard/program-03
     - name: spawnscripts/hb05.ard/program-04
@@ -1157,7 +1151,6 @@ assets:
     - name: spawnscripts/hb09.ard/program-0b
     - name: spawnscripts/hb09.ard/program-0c
     - name: spawnscripts/hb09.ard/program-103
-    - name: spawnscripts/hb09.ard/program-33
     - name: spawnscripts/hb09.ard/program-3a
     - name: spawnscripts/hb09.ard/program-48
     - name: spawnscripts/hb09.ard/program-a0
@@ -1688,7 +1681,6 @@ assets:
     source:
     - name: spawnscripts/lk03.ard/program-02
     - name: spawnscripts/lk03.ard/program-04
-    - name: spawnscripts/lk03.ard/program-3e
     - name: spawnscripts/lk03.ard/program-49
     - name: spawnscripts/lk03.ard/program-4b
     type: AreaDataScript
@@ -1728,15 +1720,6 @@ assets:
     source:
     - name: spawnscripts/lk06.ard/program-01
     - name: spawnscripts/lk06.ard/program-42
-    type: AreaDataScript
-- method: binarc
-  name: ard/lk08.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/lk08.ard/program-01
-    - name: spawnscripts/lk08.ard/program-4d
     type: AreaDataScript
 - method: binarc
   name: ard/lk09.ard
@@ -1821,151 +1804,6 @@ assets:
     - name: spawnscripts/lk16.ard/program-01
     - name: spawnscripts/lk16.ard/program-40
     - name: spawnscripts/lk16.ard/program-65
-    type: AreaDataScript
-- method: binarc
-  name: ard/lm00.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/lm00.ard/program-01
-    type: AreaDataScript
-- method: binarc
-  name: ard/lm01.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/lm01.ard/program-01
-    - name: spawnscripts/lm01.ard/program-02
-    - name: spawnscripts/lm01.ard/program-33
-    - name: spawnscripts/lm01.ard/program-43
-    - name: spawnscripts/lm01.ard/program-52
-    - name: spawnscripts/lm01.ard/program-53
-    - name: spawnscripts/lm01.ard/program-54
-    - name: spawnscripts/lm01.ard/program-55
-    - name: spawnscripts/lm01.ard/program-5a
-    - name: spawnscripts/lm01.ard/program-5b
-    type: AreaDataScript
-- method: binarc
-  name: ard/lm02.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/lm02.ard/program-01
-    - name: spawnscripts/lm02.ard/program-03
-    - name: spawnscripts/lm02.ard/program-05
-    - name: spawnscripts/lm02.ard/program-08
-    - name: spawnscripts/lm02.ard/program-09
-    - name: spawnscripts/lm02.ard/program-0b
-    - name: spawnscripts/lm02.ard/program-34
-    - name: spawnscripts/lm02.ard/program-3f
-    - name: spawnscripts/lm02.ard/program-49
-    - name: spawnscripts/lm02.ard/program-4a
-    - name: spawnscripts/lm02.ard/program-50
-    - name: spawnscripts/lm02.ard/program-5c
-    type: AreaDataScript
-- method: binarc
-  name: ard/lm03.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/lm03.ard/program-01
-    - name: spawnscripts/lm03.ard/program-35
-    - name: spawnscripts/lm03.ard/program-44
-    - name: spawnscripts/lm03.ard/program-57
-    - name: spawnscripts/lm03.ard/program-58
-    - name: spawnscripts/lm03.ard/program-59
-    - name: spawnscripts/lm03.ard/program-69
-    type: AreaDataScript
-- method: binarc
-  name: ard/lm04.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/lm04.ard/program-01
-    - name: spawnscripts/lm04.ard/program-02
-    - name: spawnscripts/lm04.ard/program-37
-    - name: spawnscripts/lm04.ard/program-40
-    - name: spawnscripts/lm04.ard/program-42
-    - name: spawnscripts/lm04.ard/program-46
-    - name: spawnscripts/lm04.ard/program-4d
-    - name: spawnscripts/lm04.ard/program-4e
-    - name: spawnscripts/lm04.ard/program-64
-    - name: spawnscripts/lm04.ard/program-66
-    - name: spawnscripts/lm04.ard/program-67
-    - name: spawnscripts/lm04.ard/program-68
-    - name: spawnscripts/lm04.ard/program-6a
-    type: AreaDataScript
-- method: binarc
-  name: ard/lm05.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/lm05.ard/program-01
-    - name: spawnscripts/lm05.ard/program-02
-    - name: spawnscripts/lm05.ard/program-03
-    - name: spawnscripts/lm05.ard/program-51
-    - name: spawnscripts/lm05.ard/program-60
-    type: AreaDataScript
-- method: binarc
-  name: ard/lm06.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/lm06.ard/program-01
-    - name: spawnscripts/lm06.ard/program-02
-    - name: spawnscripts/lm06.ard/program-03
-    - name: spawnscripts/lm06.ard/program-4f
-    type: AreaDataScript
-- method: binarc
-  name: ard/lm07.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/lm07.ard/program-01
-    - name: spawnscripts/lm07.ard/program-02
-    - name: spawnscripts/lm07.ard/program-03
-    - name: spawnscripts/lm07.ard/program-04
-    - name: spawnscripts/lm07.ard/program-48
-    - name: spawnscripts/lm07.ard/program-5d
-    - name: spawnscripts/lm07.ard/program-5e
-    - name: spawnscripts/lm07.ard/program-63
-    - name: spawnscripts/lm07.ard/program-6b
-    type: AreaDataScript
-- method: binarc
-  name: ard/lm08.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/lm08.ard/program-01
-    - name: spawnscripts/lm08.ard/program-5f
-    type: AreaDataScript
-- method: binarc
-  name: ard/lm09.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/lm09.ard/program-41
-    - name: spawnscripts/lm09.ard/program-45
-    - name: spawnscripts/lm09.ard/program-61
-    - name: spawnscripts/lm09.ard/program-62
-    type: AreaDataScript
-- method: binarc
-  name: ard/lm10.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/lm10.ard/program-47
     type: AreaDataScript
 - method: binarc
   name: ard/mu00.ard
@@ -2431,7 +2269,6 @@ assets:
     - name: spawnscripts/tr01.ard/program-01
     - name: spawnscripts/tr01.ard/program-02
     - name: spawnscripts/tr01.ard/program-0a
-    - name: spawnscripts/tr01.ard/program-33
     - name: spawnscripts/tr01.ard/program-4f
     - name: spawnscripts/tr01.ard/program-53
     - name: spawnscripts/tr01.ard/program-54
@@ -2460,7 +2297,6 @@ assets:
     source:
     - name: spawnscripts/tr03.ard/program-01
     - name: spawnscripts/tr03.ard/program-36
-    - name: spawnscripts/tr03.ard/program-4e
     - name: spawnscripts/tr03.ard/program-5a
     - name: spawnscripts/tr03.ard/program-5b
     type: AreaDataScript
@@ -2487,7 +2323,6 @@ assets:
     - name: spawnscripts/tr05.ard/program-02
     - name: spawnscripts/tr05.ard/program-04
     - name: spawnscripts/tr05.ard/program-0a
-    - name: spawnscripts/tr05.ard/program-4d
     - name: spawnscripts/tr05.ard/program-5e
     - name: spawnscripts/tr05.ard/program-5f
     - name: spawnscripts/tr05.ard/program-65
@@ -2639,6 +2474,7 @@ assets:
     - name: spawnscripts/tt04.ard/program-15f
     - name: spawnscripts/tt04.ard/program-160
     - name: spawnscripts/tt04.ard/program-177
+    - name: spawnscripts/tt04.ard/program-4c
     - name: spawnscripts/tt04.ard/program-4d
     - name: spawnscripts/tt04.ard/program-4e
     - name: spawnscripts/tt04.ard/program-4f
@@ -2730,8 +2566,6 @@ assets:
     - name: spawnscripts/tt08.ard/program-02
     - name: spawnscripts/tt08.ard/program-03
     - name: spawnscripts/tt08.ard/program-04
-    - name: spawnscripts/tt08.ard/program-0d
-    - name: spawnscripts/tt08.ard/program-0e
     - name: spawnscripts/tt08.ard/program-11f
     - name: spawnscripts/tt08.ard/program-120
     - name: spawnscripts/tt08.ard/program-12c
@@ -2751,7 +2585,6 @@ assets:
     - name: spawnscripts/tt08.ard/program-72
     - name: spawnscripts/tt08.ard/program-73
     - name: spawnscripts/tt08.ard/program-74
-    - name: spawnscripts/tt08.ard/program-d1
     - name: spawnscripts/tt08.ard/program-d8
     - name: spawnscripts/tt08.ard/program-f9
     - name: spawnscripts/tt08.ard/program-fa
@@ -3018,7 +2851,6 @@ assets:
     name: evt
     source:
     - name: spawnscripts/tt28.ard/program-01
-    - name: spawnscripts/tt28.ard/program-02
     - name: spawnscripts/tt28.ard/program-158
     - name: spawnscripts/tt28.ard/program-159
     - name: spawnscripts/tt28.ard/program-15b
@@ -3048,6 +2880,7 @@ assets:
   - method: areadatascript
     name: evt
     source:
+    - name: spawnscripts/tt32.ard/program-01
     - name: spawnscripts/tt32.ard/program-109
     - name: spawnscripts/tt32.ard/program-10a
     - name: spawnscripts/tt32.ard/program-9a
@@ -3146,17 +2979,6 @@ assets:
     - name: spawnscripts/wi02.ard/program-59
     type: AreaDataScript
 - method: binarc
-  name: ard/wi03.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/wi03.ard/program-01
-    - name: spawnscripts/wi03.ard/program-35
-    - name: spawnscripts/wi03.ard/program-57
-    - name: spawnscripts/wi03.ard/program-58
-    type: AreaDataScript
-- method: binarc
   name: ard/wi04.ard
   source:
   - method: areadatascript
@@ -3219,8 +3041,11 @@ assets:
     - name: spawnscripts/wi08.ard/program-4f
     - name: spawnscripts/wi08.ard/program-53
     type: AreaDataScript
-description: Removes as many cutscenes as possible. Should be compatible with GOA
-  Randomizer. In beta, let me know of any issues.
+description: "Removes as many cutscenes as possible. Should be compatible with GOA\
+  \ Randomizer. In beta, let me know of any issues. \nKNOWN BUGS: \n- If you fail\
+  \ a forced/boss fight, hitting continue will place you back in the fight (effectively\
+  \ a softlock if you can't beat the fight)\n- The full screen popups where you acquire\
+  \ an item do not play, you still get the item though"
 logo: logo.png
 originalAuthor: Thundrio
 title: KH2 Cutscene Remover V0.1
