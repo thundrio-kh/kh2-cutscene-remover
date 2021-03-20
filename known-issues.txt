@@ -1,20 +1,11 @@
-softlocks after 1K
+Known Bugs
+Completing Pirates 2 in GOA marks the TWTNW portal as completed
+After the first MInute long LOD fight, you have to leave the area before it progresses normally
 
-marluxias portal doesn't show up
-completing wi marked pirates purple and completing pirates marked twtnw purple
-terra doesn't show up?
+Future Improvements
+In between each day of Roxas, can skip a couple programs that just play cutscenes,
+After beating Final Xemnas, jump right to the battle report
+Icon.png will be made 128x128. preview.png will be 288 height x 512 width
 
-WEIRD
-scene after minute fight lod doeesnt end right, still works
-
-PLACES WHERE multiple cutscenes play so you can condense the programs to speed things up
-after killing thorn  twili
-in between each day stt
-after finishing wi
-after chasm of challenges
-
-
-
-
-You should make your icon.png as small as 128x128. And I recommend for your preview.png to have a maximum height of 288 and a maximum width of 512. I need to publish those specifications  . It will be important to have the correct size once I am going to implement the Mods Manager Feed.
-About your mod, congratulations  it is the very first full mod with the new Mods Manager and, on the way it's structured, it will most likely be compatible with all the future mods too! This is a nice step forward.
+Reported Issues
+Restarting the game after saving in Stone Hollow after the point the cutscene is supposed to play will softlock

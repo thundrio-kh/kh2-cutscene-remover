@@ -2,7 +2,7 @@ import os, json, shutil
 from kh2lib.kh2lib import kh2lib
 lib = kh2lib()
 
-TITLE = "KH2 Cutscene Remover V0.1"
+TITLE = "KH2 Cutscene Remover V0.5"
 
 arddir = os.path.join(os.getcwd(), "extracted_ards")
 spawndir = os.path.join("spawnscripts")
@@ -37,7 +37,7 @@ for ard in os.listdir(spawndir):
 
 mod = {
     "originalAuthor": "Thundrio",
-    "description": """Removes as many cutscenes as possible. Should be compatible with GOA Randomizer. In beta, let me know of any issues. 
+    "description": """Removes as many cutscenes as possible. Compatible with GOA mod. 
 KNOWN BUGS: 
 - If you fail a forced/boss fight, hitting continue will place you back in the fight (effectively a softlock if you can't beat the fight)
 - The full screen popups where you acquire an item do not play, you still get the item though""",

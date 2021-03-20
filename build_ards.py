@@ -4,15 +4,15 @@ lib = kh2lib()
 
 EXTRACT_ARDS=False
 
-only_build = ["hb05.ard"]
+only_build = ["hb26.ard"]
 
 arddir = os.path.join(os.getcwd(), "extracted_ards")
 
 spawndir = os.path.join(os.getcwd(), "spawnscripts")
 
 arddir_src = os.path.join(os.environ["USE_KH2_GITPATH"], "KH2", "ard")
-
 for ard in os.listdir(arddir_src):
+
     if len(only_build) > 0 and ard not in only_build:
         continue
     fn = os.path.join(arddir_src, ard)

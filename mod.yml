@@ -598,7 +598,6 @@ assets:
   - method: areadatascript
     name: evt
     source:
-    - name: spawnscripts/dc05.ard/program-01
     - name: spawnscripts/dc05.ard/program-02
     - name: spawnscripts/dc05.ard/program-55
     type: AreaDataScript
@@ -1323,7 +1322,6 @@ assets:
   - method: areadatascript
     name: evt
     source:
-    - name: spawnscripts/hb26.ard/program-01
     - name: spawnscripts/hb26.ard/program-03
     type: AreaDataScript
 - method: binarc

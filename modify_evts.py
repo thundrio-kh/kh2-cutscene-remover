@@ -22,20 +22,22 @@ os.mkdir(spawndir)
 ardinfo = {}
 ignore_worlds = [
     "lm" # little mermaid is all cutscenes lol so it softlocks
+    
 ]
 ignore_ards = [
     "lk08.ard", # Entering jungle for second visit story crashes pcsx2
-    "wi03.ard"
+    "wi03.ard", # Beating WI causes the portal to not turn purple
 ]
 # These issues might all be related to GOA mod
-# Check if the continue issue is due to GOA mod
 # I need to know if there are any areas in the game where a mission starts without a cutscene beforehand
 ignore_programs = {
     "tt27.ard": ["0x02"], # Talking to yen sid
     "tt28.ard": ["0x02"], # changing to kh2 sora
     "tr01.ard": ["0x33"], # causes entering SP the second time to go to data larxene
     "hb09.ard": ["0x33"], # causes first cutscene in merlin to not fire
-    "hb05.ard": ["0x01"], # Causes you to be sent to SP instead of skipped, and makes demyx portal
+    "hb05.ard": ["0x01"], # Causes you to be sent to SP instead of skipped, and makes demyx portal real
+    "dc05.ard": ["0x01"], # Causes terra and marluxia portal to not show up
+    "hb26.ard": ["0x01"]
 }
 
 SKIPLINE = "	SetProgressFlag 0xFFF\n"
