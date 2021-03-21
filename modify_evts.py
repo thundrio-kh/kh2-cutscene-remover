@@ -37,10 +37,33 @@ ignore_programs = {
     "hb09.ard": ["0x33"], # causes first cutscene in merlin to not fire
     "hb05.ard": ["0x01"], # Causes you to be sent to SP instead of skipped, and makes demyx portal real
     "dc05.ard": ["0x01"], # Causes terra and marluxia portal to not show up
-    "hb26.ard": ["0x01"]
+    "hb26.ard": ["0x01"] # Prevents the third chest from showing up in GOA
+}
+
+# I have a check to not skip cutscenes with type > 100 because those tend to signify menu events
+# but sometimes (like with postgame cutscenes) these are real cutscenes that should be removed
+always_remove = {
+    "eh20.ard": [
+        "0x4A" # postgame
+    ]
+}
+
+custom_jumps = {
+    "eh20.ard": {
+        # Postgame
+        "0x4A": '\tSetJump Type 5 World ES Area 0 Entrance 0 LocalSet 0 FadeType 16385\n'
+    }
 }
 
 SKIPLINE = "	SetProgressFlag 0xFFF\n"
+
+ignored = []
+def getCustomJump(ard, program,line):
+    if ard in custom_jumps:
+        if program in custom_jumps[ard]:
+            print("custom jumping over: {}".format(line))
+            return custom_jumps[ard][program]
+    return False
 
 def shouldIgnore(ard, program, eventtype):
     ignore = False
@@ -54,8 +77,11 @@ def shouldIgnore(ard, program, eventtype):
     if ard in ignore_programs:
         if program.strip() in ignore_programs[ard]:
             ignore = True
+    if ard in always_remove:
+        if program.strip() in always_remove[ard]:
+            ignore = False
     if ignore:
-        print("ignoring {}, {}".format(ard, program.strip()))
+        ignored.append("{}-{}".format(ard,program.strip()))
     return ignore
 
 arddir_src = os.path.join(os.environ["USE_KH2_GITPATH"], "KH2", "ard")
@@ -106,10 +132,15 @@ for ard in os.listdir(arddir_src):
                 if "SetEvent" in line:
                     eventtype = line.strip().split(" ")[3]
                     eventtypes.append("{} - {}".format(eventtype.zfill(3), ard))
+                if "SetJump" in line:
+                    customjump = getCustomJump(ard, currentProgram.strip(), line)
                 if "SetEvent" in line and not shouldIgnore(ard, currentProgram, eventtype):
                         changesMade = True
                     #lines_program.append(SKIPLINE)
                     #lines_new.append(SKIPLINE)
+                elif "SetJump" in line and customjump:
+                    lines_program.append(customjump)
+                    changesMade = True
                 else:
                     lines_program.append(line)
                     lines_new.append(line)
@@ -122,3 +153,6 @@ for ard in os.listdir(arddir_src):
             with open(programfn, "w") as f:
                 f.write(''.join(lines_program))
         open(evt_pth+".txt.new","w").write("".join(lines_new))
+
+print("The following were ignored")
+print(ignored)

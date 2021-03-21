@@ -900,6 +900,7 @@ assets:
     source:
     - name: spawnscripts/eh20.ard/program-102
     - name: spawnscripts/eh20.ard/program-103
+    - name: spawnscripts/eh20.ard/program-4a
     - name: spawnscripts/eh20.ard/program-55
     - name: spawnscripts/eh20.ard/program-69
     - name: spawnscripts/eh20.ard/program-6a
@@ -3039,11 +3040,20 @@ assets:
     - name: spawnscripts/wi08.ard/program-4f
     - name: spawnscripts/wi08.ard/program-53
     type: AreaDataScript
-description: "Removes as many cutscenes as possible. Should be compatible with GOA\
-  \ Randomizer. In beta, let me know of any issues. \nKNOWN BUGS: \n- If you fail\
-  \ a forced/boss fight, hitting continue will place you back in the fight (effectively\
-  \ a softlock if you can't beat the fight)\n- The full screen popups where you acquire\
-  \ an item do not play, you still get the item though"
+description: "READ THIS FIRST\nRemoves all cutscenes from the game, which decreases\
+  \ load times considerably. Compatible with GOA mod. Report any bugs at https://github.com/thundrio-kh/kh2-cutscene-remover/issues\n\
+  v1.0\nKNOWN ISSUES: \n- If you fail a forced/boss fight, hitting continue will place\
+  \ you back in the fight (effectively a softlock if you can't beat the fight)\n-\
+  \ The full screen popups where you acquire an item do not play, you still get the\
+  \ item though\n- The following cutscenes are not currentlyremoved in order to prevent\
+  \ softlocks and be compatible with the GOA mod.\n  * all cutscenes in Atlantica\n\
+  \  * The cutscenes before and after defeating the boss of Timeless River\n  * The\
+  \ cutscene after selecting \"Actually\" when talking to Yen Sid in TT1\n  * The\
+  \ cutscene after talking to the fairies in TT1 to change to KH2 Sora\n  * The cutscene\
+  \ after the spinning cubes minigame in SP1\n  * The cutscene after finishing the\
+  \ first forced fight in HB 1\n  * The cutscene after talking to Leon in Ansems Study\
+  \ during HB 2 (When the secret room is revealed)\n  * The cutscene in Garden of\
+  \ Assemblage when turning on the computer"
 logo: logo.png
 originalAuthor: Thundrio
-title: KH2 Cutscene Remover V0.1
+title: KH2 Cutscene Remover
