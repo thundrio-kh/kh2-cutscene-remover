@@ -1,6 +1,7 @@
 Known Bugs
 Completing Pirates 2 in GOA mod marks the TWTNW portal as completed
 After the first MInute long LOD fight, you have to leave the area before it progresses normally
+larxenes portal shows up before barbossa
 
 Future Improvements
 In between each day of Roxas, can improve load times by skipping a couple programs that just play cutscenes,

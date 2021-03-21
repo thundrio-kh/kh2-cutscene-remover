@@ -593,15 +593,6 @@ assets:
     - name: spawnscripts/dc04.ard/program-54
     type: AreaDataScript
 - method: binarc
-  name: ard/dc05.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/dc05.ard/program-02
-    - name: spawnscripts/dc05.ard/program-55
-    type: AreaDataScript
-- method: binarc
   name: ard/dc06.ard
   source:
   - method: areadatascript
@@ -1061,50 +1052,6 @@ assets:
     - name: spawnscripts/hb04.ard/program-d0
     - name: spawnscripts/hb04.ard/program-eb
     - name: spawnscripts/hb04.ard/program-ec
-    type: AreaDataScript
-- method: binarc
-  name: ard/hb05.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/hb05.ard/program-02
-    - name: spawnscripts/hb05.ard/program-03
-    - name: spawnscripts/hb05.ard/program-04
-    - name: spawnscripts/hb05.ard/program-05
-    - name: spawnscripts/hb05.ard/program-06
-    - name: spawnscripts/hb05.ard/program-08
-    - name: spawnscripts/hb05.ard/program-09
-    - name: spawnscripts/hb05.ard/program-0c
-    - name: spawnscripts/hb05.ard/program-0d
-    - name: spawnscripts/hb05.ard/program-100
-    - name: spawnscripts/hb05.ard/program-101
-    - name: spawnscripts/hb05.ard/program-11
-    - name: spawnscripts/hb05.ard/program-12
-    - name: spawnscripts/hb05.ard/program-45
-    - name: spawnscripts/hb05.ard/program-47
-    - name: spawnscripts/hb05.ard/program-5f
-    - name: spawnscripts/hb05.ard/program-60
-    - name: spawnscripts/hb05.ard/program-66
-    - name: spawnscripts/hb05.ard/program-67
-    - name: spawnscripts/hb05.ard/program-b5
-    - name: spawnscripts/hb05.ard/program-b6
-    - name: spawnscripts/hb05.ard/program-b7
-    - name: spawnscripts/hb05.ard/program-b8
-    - name: spawnscripts/hb05.ard/program-b9
-    - name: spawnscripts/hb05.ard/program-ba
-    - name: spawnscripts/hb05.ard/program-bb
-    - name: spawnscripts/hb05.ard/program-bc
-    - name: spawnscripts/hb05.ard/program-bd
-    - name: spawnscripts/hb05.ard/program-be
-    - name: spawnscripts/hb05.ard/program-d8
-    - name: spawnscripts/hb05.ard/program-d9
-    - name: spawnscripts/hb05.ard/program-da
-    - name: spawnscripts/hb05.ard/program-f7
-    - name: spawnscripts/hb05.ard/program-fa
-    - name: spawnscripts/hb05.ard/program-fb
-    - name: spawnscripts/hb05.ard/program-fc
-    - name: spawnscripts/hb05.ard/program-fd
     type: AreaDataScript
 - method: binarc
   name: ard/hb06.ard
@@ -2872,19 +2819,6 @@ assets:
     source:
     - name: spawnscripts/tt30.ard/program-155
     - name: spawnscripts/tt30.ard/program-99
-    type: AreaDataScript
-- method: binarc
-  name: ard/tt32.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/tt32.ard/program-01
-    - name: spawnscripts/tt32.ard/program-109
-    - name: spawnscripts/tt32.ard/program-10a
-    - name: spawnscripts/tt32.ard/program-9a
-    - name: spawnscripts/tt32.ard/program-9b
-    - name: spawnscripts/tt32.ard/program-9c
     type: AreaDataScript
 - method: binarc
   name: ard/tt34.ard
