@@ -1,9 +1,0 @@
-Program 0x80
-Bgm 119 119
-AreaSettings 15 -1
-	SetProgressFlag 0x827
-	SetUnk05 0x3
-	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 64 FadeType 1
-	SetPartyMenu 0
-
-

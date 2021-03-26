@@ -88,6 +88,8 @@ def shouldIgnore(ard, program, eventtype):
 
 arddir_src = os.path.join(os.environ["USE_KH2_GITPATH"], "KH2", "ard")
 
+noevtinventory = []
+eventpresent=False
 last_asetting = ''
 asettings = {}
 eventtypes = []
@@ -115,10 +117,12 @@ for ard in os.listdir(arddir_src):
             lib.editengine.spawnscript_extract(evt_pth, evt_pth+".txt")
         
         lines = open(evt_pth+".txt")
+        lines_program_vanilla = []
         lines_new = []
         currentProgram = ''
         lines_program = []
         changesMade = False
+        setsinventory = False
         for line in lines:
             if line.startswith("Program"):
                 if len(currentProgram) > 0:
@@ -137,15 +141,24 @@ for ard in os.listdir(arddir_src):
                                     
                                     newline = "AreaSettings {} {}".format(int(bitrep[:-1]+'1',2), settings[2])
                                     lines_program[l] = newline
+                                    lines_program_vanilla[l] = newline
                         with open(programfn, "w") as f:
-                            f.write(''.join(lines_program))
+                            f.write(''.join(lines_program_vanilla if setsinventory else lines_program))
                     lines_program = []
+                    lines_program_vanilla = []
+                    if setsinventory and not eventpresent:
+                        noevtinventory.append((ard,currentProgram))
                     changesMade = False
+                    eventpresent = False
+                    setsinventory = False
                 currentProgram = line.split(" ")[1]
             if len(currentProgram) > 0:
                 if "SetEvent" in line:
+                    eventpresent = True
                     eventtype = line.strip().split(" ")[3]
                     eventtypes.append("{} - {}".format(eventtype.zfill(3), ard))
+                if "SetInventory" in line:
+                    setsinventory = True
                 if "AreaSettings" in line:
                     setting = line.strip()
                     lastasetting = setting
@@ -155,13 +168,24 @@ for ard in os.listdir(arddir_src):
                 if "SetJump" in line:
                     customjump = getCustomJump(ard, currentProgram.strip(), line)
                 if "SetEvent" in line and not shouldIgnore(ard, currentProgram, eventtype):
-                        changesMade = True
+                    evtname = line.strip().split(" ")[1]
+                    lines
+                    alphaevt = False
+                    for letter in evtname:
+                        if letter.isalpha():
+                            alphaevt = True
+                    if alphaevt:
+                        print(ard, currentProgram, evtname)
+                    changesMade = True
+                    lines_program_vanilla.append(line)
                     #lines_program.append(SKIPLINE)
                     #lines_new.append(SKIPLINE)
                 elif "SetJump" in line and customjump:
                     lines_program.append(customjump)
+                    lines_program_vanilla.append(customjump)
                     changesMade = True
                 else:
+                    lines_program_vanilla.append(line)
                     lines_program.append(line)
                     lines_new.append(line)
         # Changes made here need to happen up above too
@@ -174,8 +198,5 @@ for ard in os.listdir(arddir_src):
                 f.write(''.join(lines_program))
         open(evt_pth+".txt.new","w").write("".join(lines_new))
 
-print("The following were ignored")
-print(ignored)
-print(unskippable)
-for aset in asettings:
-    print("{}-{}".format(asettings[aset],aset))
+print(noevtinventory)
+# Print out all the ards with a letter in the

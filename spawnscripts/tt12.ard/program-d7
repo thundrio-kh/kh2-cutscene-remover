@@ -1,8 +1,0 @@
-Program 0xD7
-Party DEFAULT
-Bgm Default Default
-AreaSettings 0 -1
-	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 150 FadeType 1
-	SetPartyMenu 0
-
-

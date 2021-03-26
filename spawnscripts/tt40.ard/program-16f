@@ -1,7 +1,0 @@
-Program 0x16F
-Bgm 151 151
-AreaSettings 0 -1
-	SetJump Type 2 World TT Area 0 Entrance 0 LocalSet 368 FadeType 1
-	SetPartyMenu 0
-
-

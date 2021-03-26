@@ -41,8 +41,9 @@ Removes all cutscenes from the game, which decreases load times considerably. Co
 v1.0
 KNOWN ISSUES: 
 - If you fail a forced/boss fight, hitting continue will place you back in the fight (effectively a softlock if you can't beat the fight)
-- The full screen popups where you acquire an item do not play, you still get the item though
-- The following cutscenes are not currentlyremoved in order to prevent softlocks and be compatible with the GOA mod.
+- The Vexen AS does not appear in GOA mod, as well as the Larxene AS showing up in it's normal spot in PR
+- The following cutscenes are not currently removed in order to prevent softlocks and be compatible with the GOA mod.
+  * all cutscenes before getting a full screen item popup
   * all cutscenes in Atlantica
   * The cutscenes before and after defeating the boss of Timeless River
   * The cutscene after selecting "Actually" when talking to Yen Sid in TT1

@@ -4,7 +4,7 @@ lib = kh2lib()
 
 EXTRACT_ARDS=False
 
-only_build = ["ca04.ard"]
+only_build = ["ca03.ard"]
 
 arddir = os.path.join(os.getcwd(), "extracted_ards")
 

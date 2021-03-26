@@ -1,7 +1,0 @@
-Program 0x64
-Bgm 136 136
-AreaSettings 0 -1
-	SetJump Type 2 World HB Area 0 Entrance 0 LocalSet 256 FadeType 1
-	SetPartyMenu 0
-
-

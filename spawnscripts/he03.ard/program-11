@@ -1,8 +1,0 @@
-Program 0x11
-AreaSettings 0 -1
-	SetProgressFlag 0x186D
-	SetJump Type 1 World HE Area 3 Entrance 51 LocalSet 0 FadeType 1
-	SetPartyMenu 0
-
-Spawn "e_50"
-

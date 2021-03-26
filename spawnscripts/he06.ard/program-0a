@@ -1,9 +1,0 @@
-Program 0x0A
-Party DEFAULT
-AreaSettings 0 -1
-	SetProgressFlag 0x1839
-	SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 126 FadeType 1
-	SetPartyMenu 0
-
-Spawn "e_50"
-
