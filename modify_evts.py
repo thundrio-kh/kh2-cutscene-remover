@@ -21,7 +21,7 @@ os.mkdir(spawndir)
 
 ardinfo = {}
 ignore_worlds = [
-    "lm" # little mermaid is all cutscenes lol so it softlocks
+    "lm", # little mermaid is all cutscenes lol so it softlocks
 ]
 ignore_ards = [
     "lk08.ard", # Entering jungle for second visit story crashes pcsx2
@@ -29,6 +29,8 @@ ignore_ards = [
     "dc05.ard", # Marluxias portal doesn't show up after beating WI
     "hb05.ard", # Causes you to be sent to SP instead of skipping it, and makes the HB portal send you to Data Demyx
     "tt32.ard", # Causes GOA Mod to not give out the weapons of each ally, preventing second visits from working
+    "nm05.ard", # Fix vexens portal not showing up (likely an issue with the ard being a different size now)
+    "ca16.ard" # Fix OG Larxene portal still showing up (issue with ard size)
 ]
 # These issues might all be related to GOA mod
 # I need to know if there are any areas in the game where a mission starts without a cutscene beforehand

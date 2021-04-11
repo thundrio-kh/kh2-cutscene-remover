@@ -1988,17 +1988,6 @@ assets:
     - name: spawnscripts/nm04.ard/program-67
     type: AreaDataScript
 - method: binarc
-  name: ard/nm05.ard
-  source:
-  - method: areadatascript
-    name: evt
-    source:
-    - name: spawnscripts/nm05.ard/program-01
-    - name: spawnscripts/nm05.ard/program-03
-    - name: spawnscripts/nm05.ard/program-56
-    - name: spawnscripts/nm05.ard/program-62
-    type: AreaDataScript
-- method: binarc
   name: ard/nm06.ard
   source:
   - method: areadatascript
@@ -2985,14 +2974,15 @@ description: "READ THIS FIRST\nRemoves all cutscenes from the game, which decrea
   \ The Vexen AS does not appear in GOA mod, as well as the Larxene AS showing up\
   \ in it's normal spot in PR\n- The following cutscenes are not currently removed\
   \ in order to prevent softlocks and be compatible with the GOA mod.\n  * all cutscenes\
-  \ before getting a full screen item popup\n  * all cutscenes in Atlantica\n  * The\
-  \ cutscenes before and after defeating the boss of Timeless River\n  * The cutscene\
-  \ after selecting \"Actually\" when talking to Yen Sid in TT1\n  * The cutscene\
-  \ after talking to the fairies in TT1 to change to KH2 Sora\n  * The cutscene after\
-  \ the spinning cubes minigame in SP1\n  * The cutscene after finishing the first\
-  \ forced fight in HB 1\n  * The cutscene after talking to Leon in Ansems Study during\
-  \ HB 2 (When the secret room is revealed)\n  * The cutscene in Garden of Assemblage\
-  \ when turning on the computer"
+  \ before getting a full screen item popup\n  * all cutscenes in Atlantica\n  * Cutscenes\
+  \ in Halloween Town Yuletide Hill\n  * Cutscenes in Port Royal Isla De Muerta: Rock\
+  \ Face\n  * The cutscenes before and after defeating the boss of Timeless River\n\
+  \  * The cutscene after selecting \"Actually\" when talking to Yen Sid in TT1\n\
+  \  * The cutscene after talking to the fairies in TT1 to change to KH2 Sora\n  *\
+  \ The cutscene after the spinning cubes minigame in SP1\n  * The cutscene after\
+  \ finishing the first forced fight in HB 1\n  * The cutscene after talking to Leon\
+  \ in Ansems Study during HB 2 (When the secret room is revealed)\n  * The cutscene\
+  \ in Garden of Assemblage when turning on the computer"
 logo: logo.png
 originalAuthor: Thundrio
 title: KH2 Cutscene Remover
