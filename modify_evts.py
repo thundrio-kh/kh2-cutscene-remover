@@ -31,6 +31,7 @@ ignore_ards = [
     "tt32.ard", # Causes GOA Mod to not give out the weapons of each ally, preventing second visits from working
     "nm05.ard", # Fix vexens portal not showing up (likely an issue with the ard being a different size now)
     "ca16.ard" # Fix OG Larxene portal still showing up (issue with ard size)
+    "hb26.ard" # Prevents third chest from showing up in GOA, and can cause incorrect portals to turn purple
 ]
 # These issues might all be related to GOA mod
 # I need to know if there are any areas in the game where a mission starts without a cutscene beforehand
@@ -40,7 +41,6 @@ ignore_programs = {
     "tr01.ard": ["0x33"], # causes entering SP the second time to go to data larxene
     "hb09.ard": ["0x33"], # causes first cutscene in merlin to not fire
     # "hb05.ard": ["0x02", "0x05", "0x06", "0x08"], # Causes you to be sent to SP instead of skipped, and makes demyx portal real
-    "hb26.ard": ["0x01"], # Prevents the third chest from showing up in GOA
     "eh20.ard": ["0x4a"]
 }
 
