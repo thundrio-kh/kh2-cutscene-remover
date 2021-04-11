@@ -8,7 +8,7 @@ lib = kh2lib()
 EXTRACT_ARDS=False
 
 
-arddir = os.path.join(os.getcwd(), "extracted_ards")
+arddir = os.path.join(lib.gamedir, "subfiles", "script", "ard")
 if EXTRACT_ARDS:    
     if os.path.exists(arddir):
         shutil.rmtree(arddir)
@@ -38,7 +38,8 @@ ignore_programs = {
     "tr01.ard": ["0x33"], # causes entering SP the second time to go to data larxene
     "hb09.ard": ["0x33"], # causes first cutscene in merlin to not fire
     # "hb05.ard": ["0x02", "0x05", "0x06", "0x08"], # Causes you to be sent to SP instead of skipped, and makes demyx portal real
-    "hb26.ard": ["0x01"] # Prevents the third chest from showing up in GOA
+    "hb26.ard": ["0x01"], # Prevents the third chest from showing up in GOA
+    "eh20.ard": ["0x4a"]
 }
 
 # I have a check to not skip cutscenes with type > 100 because those tend to signify menu events
@@ -50,10 +51,10 @@ always_remove = {
 }
 
 custom_jumps = {
-    "eh20.ard": {
-        # Postgame
-        "0x4A": '\tSetJump Type 5 World ES Area 0 Entrance 0 LocalSet 0 FadeType 16385\n'
-    }
+    # "eh20.ard": {
+    #     # Postgame
+    #     "0x4A": '\tSetJump Type 5 World ES Area 0 Entrance 0 LocalSet 0 FadeType 16385\n'
+    # }
 }
 
 SKIPLINE = "	SetProgressFlag 0xFFF\n"
@@ -73,7 +74,7 @@ def shouldIgnore(ard, program, eventtype):
     if ard in ignore_ards:
         ignore = True
     # NEEDED To make choosing weapons work
-    if int(eventtype) >= 128:
+    if int(eventtype) >= 128 and not ard.startswith("eh") and not ard.startswith("es"):
         unskippable.append("{}-{}".format(ard,program))
         ignore = True
     if ard in ignore_programs:
@@ -94,16 +95,19 @@ last_asetting = ''
 asettings = {}
 eventtypes = []
 for ard in os.listdir(arddir_src):
+    evtname = None
     fn = os.path.join(arddir_src, ard)
 
-    out_pth = os.path.join(arddir, ard)
+    out_pth = os.path.join(arddir, ard.split(".")[0])
     if EXTRACT_ARDS:
         lib.editengine.bar_extract(fn, out_pth)
     
-    evtname = None
-    for f in [i for i in os.listdir(out_pth) if not i.endswith(".txt") and not i.endswith(".new")]:
-        if f.startswith("evt."):
-            evtname = f
+    if "evt.script" in os.listdir(out_pth):
+        evtname = "evt.script"
+
+    # for f in [i for i in os.listdir(out_pth) if not i.endswith(".txt") and not i.endswith(".new")]:
+    #     if f.startswith("evt."):
+    #         evtname = f
 
     ardinfo[ard] = {
         "fn": fn,
@@ -112,11 +116,12 @@ for ard in os.listdir(arddir_src):
     if evtname == None:
         print("ARD {} has no evt".format(ard))
     else:
+
         evt_pth = os.path.join(out_pth, evtname)
         if EXTRACT_ARDS:
-            lib.editengine.spawnscript_extract(evt_pth, evt_pth+".txt")
+            lib.editengine.spawnscript_extract(evt_pth, evt_pth)
         
-        lines = open(evt_pth+".txt")
+        lines = open(evt_pth)
         lines_program_vanilla = []
         lines_new = []
         currentProgram = ''
@@ -168,14 +173,14 @@ for ard in os.listdir(arddir_src):
                 if "SetJump" in line:
                     customjump = getCustomJump(ard, currentProgram.strip(), line)
                 if "SetEvent" in line and not shouldIgnore(ard, currentProgram, eventtype):
-                    evtname = line.strip().split(" ")[1]
+                    eventname = line.strip().split(" ")[1]
                     lines
                     alphaevt = False
-                    for letter in evtname:
+                    for letter in eventname:
                         if letter.isalpha():
                             alphaevt = True
-                    if alphaevt:
-                        print(ard, currentProgram, evtname)
+                    # if alphaevt:
+                    #     print(ard, currentProgram, eventname)
                     changesMade = True
                     lines_program_vanilla.append(line)
                     #lines_program.append(SKIPLINE)
@@ -198,5 +203,5 @@ for ard in os.listdir(arddir_src):
                 f.write(''.join(lines_program))
         open(evt_pth+".txt.new","w").write("".join(lines_new))
 
-print(noevtinventory)
+# print(noevtinventory)
 # Print out all the ards with a letter in the

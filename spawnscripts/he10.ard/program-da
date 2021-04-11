@@ -1,0 +1,6 @@
+Program 0xDA
+AreaSettings 0 -1
+	SetJump Type 2 World HE Area 0 Entrance 0 LocalSet 219 FadeType 1
+	SetPartyMenu 0
+
+

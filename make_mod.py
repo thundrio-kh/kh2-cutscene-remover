@@ -4,7 +4,6 @@ lib = kh2lib()
 
 TITLE = "KH2 Cutscene Remover"
 
-arddir = os.path.join(os.getcwd(), "extracted_ards")
 spawndir = os.path.join("spawnscripts")
 
 assets = []
